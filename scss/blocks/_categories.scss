@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   
 }
 
@@ -20,7 +21,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background: $cat-background;    
+    background: $cat-background;  
+    &:first-of-type{
+        margin-bottom: 30px;
+    }  
 }
 
 .categories__title{
@@ -89,6 +93,57 @@
         height: 24px;
         background: url(../img/arrow-right.png);
         background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 790px){
+    .categories{
+        margin-top: 537px;
+    }
+
+    .categories__item{
+        position: relative;
+        width: 100%;
+    }
+
+    .categories__title-icon{
+        position: absolute;
+        top: 95px;
+        right: 63px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .categories__icon{
+        top: -13px;
+        right: 30px;
+    }
+
+    .categories__item:last-child{
+        .categories__icon{
+            right: -30px;
+            top: 43px;
+        }
+    }
+
+    .categories__title-name{
+        margin-top: 30px;
+        margin-left: 0
+    }
+
+    .categories__description{
+        margin-top: 22px;
+        max-width: 56.3%; 
+    }
+
+    .categories__item:last-child{
+        .categories__description{
+            max-width: 52%; 
+        }
+    }
+
+    .categories__button{
+        margin-top: 55px;
     }
 }
 

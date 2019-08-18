@@ -16,8 +16,8 @@
             <nav class="header__nav nav">
                 <div class="nav__item header__logo logo">
                     <picture>
-                        <source media="(max-size: 300px)" srcset="img/header__logo--mobile.png">
-                        <source media="(max-size: 768px)" srcset="img/header__logo--tablet.png">
+                        <source media="(max-width: 300px)" srcset="img/header__logo--mobile.png">
+                        <source media="(max-width: 791px)" srcset="img/header__logo--tablet.png">
                         <img src="img/header__logo.png" alt="">
                     </picture>
                 </div>
@@ -56,7 +56,11 @@
                             
                         </a>
                     </div>
-                    <img class="banner__img" src="img/index-can.png" alt="">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="img/index-can--mobile.png">
+                        <source media="(max-width: 791px)" srcset="img/index-can--tablet.jpg">
+                        <img class="banner__img" src="img/index-can.png" alt="">
+                    </picture>
                 </div>
             </div>
         </article>
@@ -67,7 +71,10 @@
                     <div class="categories__item">
                         <div class="categories__title">
                             <div class="categories__title-icon">
-                                <img class="categories__icon" src="img/cat-slim.png" alt="">
+                                 <picture>
+                                    <source media="(max-width: 790px)" srcset="img/cat-slim-tablet.png">
+                                    <img class="categories__icon" src="img/cat-slim.png" alt="">
+                                </picture>
                             </div>
                             <div class="categories__title-name">
                                 Похудение
@@ -81,7 +88,10 @@
                     <div class="categories__item">
                         <div class="categories__title">
                             <div class="categories__title-icon">
-                                <img class="categories__icon" src="img/cat-pro.png" alt="">
+                                <picture>
+                                    <source media="(max-width: 790px)" srcset="img/cat-pro-tablet.png">
+                                    <img class="categories__icon" src="img/cat-pro.png" alt="">
+                                </picture>
                             </div>
                             <div class="categories__title-name">
                                 Набор массы
@@ -161,16 +171,19 @@
                                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. 
                         </div>
                         <div class="example__stat stat">
-                            <div class="stat__item">
-                                <h2 class="stat__title">5 кг</h2>
-                                <p class="stat__description">cнижение веса</p>
+                            <div class="stat__info">
+                                <div class="stat__item">
+                                    <h2 class="stat__title">5 кг</h2>
+                                    <p class="stat__description">cнижение веса</p>
+                                </div>
+                                <div class="stat__item">
+                                    <h2 class="stat__title">60 дней</h2>
+                                    <p class="stat__description">затрачено времени</p>
+                                </div>
                             </div>
-                            <div class="stat__item">
-                                <h2 class="stat__title">60 дней</h2>
-                                <p class="stat__description">затрачено времени</p>
-                            </div>
+                            <h2 class="stat__price">Затраты на питание: <span class="stat__price-end">15 000 руб.</span></h2>
                         </div>
-                        <h2 class="example__price">Затраты на питание: <span class="example__price-end">15 000 руб.</span></h2>
+                       
                     </div>
                     <div class="example__slider slider">
                         <div class="slider__img">

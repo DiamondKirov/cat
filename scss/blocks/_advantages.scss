@@ -1,5 +1,5 @@
 .advantages{
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .advantages__wrapper{
@@ -7,12 +7,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .advantages__item{
-   
     position: relative;
-    margin-top: 27px;
+    margin-top: 30px;
     width: 245px;
 }
 
@@ -48,5 +48,21 @@
 .advantages__item:not(:first-of-type){
     .advantages__number{
         right: 0px;
+    }
+}
+
+@media (max-width: 790px){
+   
+    .advantages__item{
+        margin-bottom: 103px;
+        margin-right: 83px;
+    }
+
+    .advantages__item:nth-child(3){
+        margin-bottom: 0;
+    }
+
+    .advantages__item:nth-child(4){
+        margin-bottom: 0;
     }
 }

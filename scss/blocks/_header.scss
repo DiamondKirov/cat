@@ -17,10 +17,11 @@ header{
 }
 
 .nav__link{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Oswald';
-    font-size: 20px;
-    color: white;
-    text-transform: uppercase;
+   @include header__link;
+    &--active{
+        @include header__link;
+        border-bottom: 2px solid white;
+    }
 }
+
+

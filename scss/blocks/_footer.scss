@@ -1,0 +1,64 @@
+.map{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 400px;
+    background: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-size: 100% 400px ;
+}
+
+.map__contacts{
+    position: absolute;
+    top: 95px;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 75px;
+    width: 495px;
+    height: 150px;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: white;
+}
+
+.contacts__title{
+    font-family: 'oswald';
+    font-weight: normal;
+    width: 150px;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.contacts__description{
+    margin-left: 100px;
+    width: 170px;
+    font-family: 'arial';
+    font-size: $p-size;
+    line-height: 20px;
+    color: $p-color;
+}
+
+.map__pin{
+    position: absolute;
+    top: 37%;
+    right: 22.2%;
+}
+
+.footer__wrapper{
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social{
+    margin-left: 20px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+

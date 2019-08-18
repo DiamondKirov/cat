@@ -1,5 +1,8 @@
-.nav__link{
-    &.active{
-        border-bottom: 2px solid white;
-    }
+@mixin header__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
 }

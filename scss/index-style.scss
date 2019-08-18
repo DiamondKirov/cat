@@ -3,6 +3,7 @@
 @import 'blocks/_header' ;
 @import 'blocks/_banner' ;
 @import 'blocks/_categories' ;
+@import 'blocks/_advantages' ;
 
 
 
@@ -10,4 +11,10 @@
     width: 1220px;
     padding: 0 40px;
     margin: 0 auto;
+}
+
+.title{
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-size: $h1-size;
 }

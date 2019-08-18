@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background: $cat-background;
+    background: $cat-background;    
 }
 
 .categories__title{
@@ -46,10 +46,13 @@
     top: -5px;
 }
 
-.categories__icon:last-of-type{
-    right: -15px;
-    top: 23px;
+.categories__item:last-child{
+    .categories__icon{
+        right: -15px;
+        top: 23px;
+    }
 }
+
 
 .categories__title-name{
     margin-top: -2px;
@@ -65,6 +68,7 @@
     font-family: 'arial';
     font-size: $p-size;
     line-height: $p-line;
+    color: $p-color;
 }
 
 .categories__button{

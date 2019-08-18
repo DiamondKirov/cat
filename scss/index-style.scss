@@ -1,0 +1,12 @@
+@import '_mixins' ;
+@import '_variables' ;
+@import 'blocks/_header' ;
+@import 'blocks/_main-index' ;
+
+
+
+.container{
+    width: 1220px;
+    padding: 0 40px;
+    margin: 0 auto;
+}

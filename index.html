@@ -16,10 +16,13 @@
             <nav class="header__nav nav">
                 <div class="nav__item header__logo logo">
                     <picture>
-                        <source media="(max-width: 300px)" srcset="img/header__logo--mobile.png">
-                        <source media="(max-width: 791px)" srcset="img/header__logo--tablet.png">
+                        <source media="(max-width: 650px)" srcset="img/header__logo--mobile.png">
+                        <source media="(max-width: 790px)" srcset="img/header__logo--tablet.png">
                         <img src="img/header__logo.png" alt="">
                     </picture>
+                </div>
+                <div class="nav__item logo-title">
+                    <img  src="img/header__logo-title--mobile.png" alt="">
                 </div>
                 <div class="nav__item header__navigation">
                     <a href="#" class="nav__link--active">
@@ -32,13 +35,21 @@
                         Подбор программы
                     </a>
                 </div>
+                <a href="#" class="nav__item-burger burger">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </a>
             </nav>
         </div>
     </header>
 
     <main id="content">
         <article class="background">
-            <img src="img/index__background--desctop.jpg" alt="">
+            <picture>
+                <source media="(max-width: 650px)" srcset="img/index__background--mobile.jpg">
+                <img class="background__image" src="img/index__background--desctop.jpg" alt="">
+            </picture>
         </article>
         <article class="banner">
             <div class="container">
@@ -50,17 +61,18 @@
                         <div class="banner__description">
                             занялся собой? займись котом!
                         </div>
+                         <picture>
+                            <source media="(max-width: 650px)" srcset="img/index-can--mobile.png">
+                            <source media="(max-width: 791px)" srcset="img/index-can--tablet.jpg">
+                            <img class="banner__img" src="img/index-can.png" alt="">
+                        </picture>
                         <div class="banner__button">
                             <a class="button" href="#">подобрать программу</a> 
                         </div>
                             
                         </a>
                     </div>
-                    <picture>
-                        <source media="(max-width: 300px)" srcset="img/index-can--mobile.png">
-                        <source media="(max-width: 791px)" srcset="img/index-can--tablet.jpg">
-                        <img class="banner__img" src="img/index-can.png" alt="">
-                    </picture>
+                   
                 </div>
             </div>
         </article>
@@ -72,6 +84,7 @@
                         <div class="categories__title">
                             <div class="categories__title-icon">
                                  <picture>
+                                    <source media="(max-width: 650px)" srcset="img/cat-slim-mobile.png">
                                     <source media="(max-width: 790px)" srcset="img/cat-slim-tablet.png">
                                     <img class="categories__icon" src="img/cat-slim.png" alt="">
                                 </picture>
@@ -89,6 +102,7 @@
                         <div class="categories__title">
                             <div class="categories__title-icon">
                                 <picture>
+                                    <source media="(max-width: 650px)" srcset="img/cat-pro-mobile.png">
                                     <source media="(max-width: 790px)" srcset="img/cat-pro-tablet.png">
                                     <img class="categories__icon" src="img/cat-pro.png" alt="">
                                 </picture>
@@ -187,13 +201,25 @@
                     </div>
                     <div class="example__slider slider">
                         <div class="slider__img">
-                            <img class="slide__item before" src="img/before-desctop.png" alt="">
-                            <img class="slide__item after" src="img/after-desctop.png" alt="">
+                            <picture>
+                                <source media="(max-width: 650px)" srcset="img/before-mobile.png">
+                                <img class="slide__item before" src="img/before-desctop.png" alt="">
+                            </picture>
+                            <picture>
+                                <source media="(max-width: 650px)" srcset="img/after-mobile.png">
+                                <img class="slide__item after" src="img/after-desctop.png" alt="">
+                            </picture>
+                            
                         </div>
                         <div class="slider__control">
                             <h2 class="range__name" for="">Было</h2>
                             <div class="slider__range">
                                 <div class="slider__thumb"></div>
+                                
+                            </div>
+                            <div class="slider__switch">
+                                <input type="radio" id="before" name="switch"><label class="slider__before" for="before"></label>
+                                <input type="radio" id="after" name="switch"><label class="slider__after" for="after"></label>
                             </div>
                             <h2 class="range__name" for="">Стало</h2>
                         </div>

@@ -71,6 +71,7 @@ footer{
     .map{
         margin-top: 200px;
     }
+
     .contacts__description{
         margin-right: 80px;
         
@@ -81,8 +82,8 @@ footer{
         
     }
 
-
     .map__contacts{
+        left: 0;
         top: -200px;
         margin: 0;
         padding-left: 0;
@@ -91,3 +92,55 @@ footer{
     }
 }
 
+@media (max-width: 650px){
+
+    .map{
+        margin-top: 0px;
+    }
+   
+    .map__contacts{
+        top: 0;
+        left: 0;
+        max-height: 115px;
+    }
+
+    .contacts__title{
+        margin: 0;
+        padding-left: 10px;
+        font-size: 16px;
+        width: 100%;
+        
+
+    }
+    
+
+    .contacts__description{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    br{
+        display: none;
+    }
+
+    .footer__wrapper{
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer__logo{
+        padding-bottom: 20px;
+    }
+
+    .footer__social{
+        padding: 30px 100px;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .footer__html{
+        padding: 20px 0;
+    }
+}

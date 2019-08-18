@@ -1,8 +1,10 @@
+
 .background{
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 720px;
+    height: 698px;
     z-index: -1;
 }
 
@@ -41,13 +43,13 @@
     font-family: 'Oswald';
     font-size: 20px;
     text-transform: uppercase;
-    
 }
 
 .banner__img{
     position: absolute;
     right: 18%;
     top: -30%;
+    z-index: -1;
 }
 
 
@@ -66,6 +68,59 @@
        top: 200px;
        right: 0;
        z-index: -1;
+    }
+}
+
+
+@media (max-width: 650px){
+    .background{
+        top: 65px;
+        display: block;
+        width: 100%;
+        height: 605px;
+    }
+
+    .background__image{
+        width: 100%;
+        height: 310px;
+    }
+
+    .banner__info{
+        margin: 0;
+        margin-top: 30px;
+        max-width: 100%;
+        text-align: center;
+        color: white;
+        text-align: center;
+    }
+
+ 
+    .banner__title{
+        font-size: 36px;
+        line-height: 36px;  
+    }
+
+    .banner__description{
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 14px;  
+    }
+
+    .banner__img{
+       position: relative;
+       top: 30px;
+       z-index: -1;
+    }
+
+    .banner__button{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    .button{
+        padding: 10px 73px;
+        color: white;
+        background: $green;
     }
 }
 

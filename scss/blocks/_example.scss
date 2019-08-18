@@ -117,6 +117,7 @@
 }
 
 .slider__range{
+
     position: relative;
     width: 400px;
     height: 6px;
@@ -132,6 +133,7 @@
     border-radius: 50%;
     background: white;
     border: 1px solid #cdcdcd;
+    cursor: pointer;
 }
 
 .range__name{
@@ -160,6 +162,73 @@
     width: 610px;
     height: 463px;
     background: #cdcdcd;
+}
+
+.slider__switch{
+    display: none;
+    width: 80px;
+    height: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+   
+    
+}
+
+.slider__before{
+    width: 35px;
+    height: 6px;
+    background: $green;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.slider__after{
+    margin-right: 2.5px;
+    width: 35px;
+    height: 6px;
+    background: white;
+    border-radius: 3px;
+   
+    cursor: pointer;
+}
+
+#before{
+    width: 0px;
+
+}
+
+#after{
+    width: 0px;
+}
+
+
+#after:checked{
+    & + .slider__after{
+        background: $green;
+    }
+
+   
+}
+
+#after:not(:checked){
+    & + .slider__after{
+        background: white;
+    }
+}
+
+#before:checked{
+    & + .slider__before{
+        background: $green;
+    }
+}
+
+#before:not(:checked){
+    & + .slider__before{
+        background: white;
+    }
 }
 
 
@@ -209,5 +278,93 @@
 
     .slider__control{
         margin-top: 26px;
+    }
+}
+
+@media (max-width: 650px){
+    .example{
+        background: #f2f2f2;
+        padding-bottom: 120px;
+    }
+
+    .example__wrapper{
+        margin-top: 0;
+       
+    }
+
+    .example__title{
+        margin-top: 48px;
+    }
+
+    .example__description{
+        width: 98%;
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .example__stat{
+        margin-top: 25px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .stat__item{
+        margin-top: 0px;
+        width: 120px;
+        height: 55px;
+    }
+
+    .stat__description{
+        font-size: 12px;
+    }
+
+    .stat__item:last-of-type{
+        .stat__description{
+            top: 30px;
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    .stat__title{
+        font-size: 24px;
+    }
+
+    .stat__price{
+        margin-top: 35px;
+       display: block;
+       font-size: 14px;
+    }
+
+    .example__slider{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    .slider__control{
+        margin-left: 0;
+        justify-content: space-around;
+        width: 200px;
+    }
+
+    .slider__img {
+        .after{
+            display: none;
+        }
+    }
+
+    .slider__switch{
+        display: flex;
+    }
+
+    .slider__range{
+        display: none;
+        width: 0;
+    }
+
+    .slider__background{
+        display: none;
     }
 }

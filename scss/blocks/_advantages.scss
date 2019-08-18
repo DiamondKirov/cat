@@ -1,5 +1,5 @@
 .advantages{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .advantages__wrapper{
@@ -64,5 +64,47 @@
 
     .advantages__item:nth-child(4){
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 730px){
+    .advantages__item:nth-child(3){
+        margin-bottom: 103px;
+    }
+}
+
+@media (max-width: 650px){
+
+
+    .advantages__item{
+        margin: 0;
+        margin-bottom: 20px!important;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+      
+    }
+
+    .advantages__item:first-of-type{
+        margin-top: 15px;
+    }
+
+
+    .advantages__icon{
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantages__description{
+        margin: 0;
+        margin-left: 20px;
+        width: 75%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .advantages__number{
+        display: none;
     }
 }

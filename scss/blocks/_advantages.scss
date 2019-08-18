@@ -45,6 +45,8 @@
     z-index: -1;
 }
 
-.advantages__number:not(:first-of-type){
-    right: 0px;
+.advantages__item:not(:first-of-type){
+    .advantages__number{
+        right: 0px;
+    }
 }

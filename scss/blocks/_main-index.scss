@@ -7,28 +7,45 @@
 }
 
 .button{
-    font-family: 'Oswald';
-    font-size: 20px;
-    text-transform: uppercase;
+    padding: 11px 27px;
     color: white;
     background: $green;
-    padding: 15px 25px;
+}
+
+.banner__wrapper{
+    position: relative;
+    width: 100%;
 }
 
 .banner__info{
-    margin-top: 100px;
-    margin-left: 90px;
-    width: 50%;
+    margin-top: 105px;
+    margin-left: 80px;
+    max-width: 45%;
 }
 
 .banner__title{
     font-family: 'Oswald';
-    font-weight: bold;
     font-size: $h1-size;
+    line-height: $h1-size;
 }
 
 .banner__description{
+    margin-top: 40px;
     font-family: 'Oswald';
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.banner__button{
+    margin-top: 65px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+
+.banner__img{
+    position: absolute;
+    right: 18%;
+    top: -30%;
 }

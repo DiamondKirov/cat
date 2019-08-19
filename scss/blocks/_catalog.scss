@@ -115,3 +115,35 @@
    background-color: white;
    border: 1px solid #f2f2f2;
 }
+
+@media (max-width: 790px){
+   .catalog{
+      margin-top: 50px;
+   }
+
+   .product{
+      width: 324px;
+   }
+
+   .product:nth-of-type(n+3){
+      margin-top: 141px;
+   }
+
+   .product__img{
+      left: 83px;
+      &--big{
+         left: 65px;
+      }
+   }
+
+   .product__info{
+      width: 250px;
+   }
+
+   .product__buy{
+      padding: 8px 93px; 
+      &--add{
+         padding: 8px 80px; 
+      }
+   }
+}

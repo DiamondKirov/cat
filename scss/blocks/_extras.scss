@@ -19,7 +19,7 @@
     background: white;
 }
 
-.extras_wrapper{
+.extras__wrapper{
     display: flex;
     margin-top: 90px;
     flex-direction: row;
@@ -109,5 +109,77 @@
     text-align: center;
     font-size: $p-size;
     line-height: 20px;
-   
+}
+
+
+@media (max-width: 790px){
+
+    .extras{
+        margin-top: 90px;
+    }
+
+    .extras__title{
+        margin-left: -3px;
+    }
+
+    .extras__wrapper{
+        flex-direction: column;
+    }
+
+    .addition{
+        border-left: 1px solid #cdcdcd;
+        border-right: 1px solid #cdcdcd;
+        padding: 0 37px;
+        height: 138px;
+        max-width: 89%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .addition__title{
+        margin-top: 25px;
+    }
+
+    .addition__description{
+        width: auto;
+        margin: 0;
+        margin-top: 28px;
+        margin-right: 50px;
+        margin-left: auto;
+        
+    }
+
+    .addition__price{
+        margin: 0;
+        margin-top: 28px;
+        margin-right: 0;
+    }
+
+    .addition__button{
+        width: 100%;
+        margin: 0;
+        margin-top: -17px;
+    }
+
+    .extras__gift{
+        margin-top: 67px;
+        margin-bottom: 80px;
+        width: 100%;
+        height: 200px;
+        background: url('../img/gift-table.jpg');
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .extras__gift-img{
+        margin: 0;
+        margin-left: 90px;
+    }
+
+    .extras__gift-description{
+        text-align: left;
+        margin-left: auto;
+        margin-right: 120px;
+    }
 }

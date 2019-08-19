@@ -1,0 +1,13 @@
+@import '_mixins' ;
+@import '_variables' ;
+@import 'blocks/_header' ;
+@import 'blocks/_footer' ;
+@import 'blocks/_catalog' ;
+
+.nav__link{
+    color: black;
+    &--active{
+       color: black;
+       border-color: $green;
+    }
+}

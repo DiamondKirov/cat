@@ -159,9 +159,10 @@
 .slider__background{
     position: absolute;
     bottom: -55px;
-    width: 610px;
-    height: 463px;
+    width: 555px;
+    height: 465px;
     background: #cdcdcd;
+    z-index: -1;
 }
 
 .slider__switch{

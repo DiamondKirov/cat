@@ -116,6 +116,18 @@
    border: 1px solid #f2f2f2;
 }
 
+@media (max-width: 1076px){
+   .product:nth-of-type(n+4){
+      margin-top: 143px;
+   }
+}
+
+@media (max-width: 831px){
+   .product:nth-of-type(n+3){
+      margin-top: 143px;
+   }
+}
+
 @media (max-width: 790px){
    .catalog{
       margin-top: 50px;
@@ -144,6 +156,122 @@
       padding: 8px 93px; 
       &--add{
          padding: 8px 80px; 
+      }
+   }
+}
+
+@media (max-width: 725px){
+   .product:nth-of-type(n+1){
+      margin-top: 141px;
+   }
+
+   .product{
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 530px){
+   .catalog{
+      margin-top: 35px;
+   }
+
+   .catalog__products{
+     
+      margin-top: 35px;
+      align-items: center;
+   }
+
+   .product{
+      height: 207px;
+      margin: 0 auto;
+      border: 1px solid #cdcdcd;
+      background: white;
+   }
+
+   .product:first-of-type{
+      
+      margin-top: 10px;
+      border-bottom: none;
+   }
+
+   .product:nth-of-type(n+1){
+      margin-top: 0;
+   }
+
+   .product__img{
+      top: 0px;
+      left: 20px;
+      &--big{
+         top: 0px;
+         left: 20px;
+      }
+   }
+
+   .product__title{
+      padding-top: 23px;
+      margin-left: 23%;
+      width: 80px;
+      margin-top: 0;
+      text-align: left;
+      font-size: 16px;
+   }
+
+   .products__description{
+      margin-left: 42%;
+      margin-top: 10px;
+     
+      text-align: right;
+   }
+
+   .product__info{
+      width: 140px;
+      font-size: 12px;
+      border: none;
+      line-height: 0;
+      height: 17px;
+      &--add{
+         margin-left: 0;
+         width: 100%;
+         font-size: 12px;
+         border: none;
+         line-height: 16px;
+         height: 17px;
+      }
+   }
+
+   .product__button{
+      margin-top: 35px;   
+      &--add{
+         margin-top: 35px;
+      }
+   }
+
+   .product__buy{
+      padding: 8px 110px; 
+      &--add{
+         padding: 8px 100px; 
+      }
+   }
+
+   .add{
+      flex-direction: column;
+
+      .product__img--add{
+         
+         position: static;
+         margin-top: 25px;
+      }   
+
+      .product__title{
+         margin-top: 0;
+         margin-left: 0;
+         width: 100%;
+         text-align: center;
+      }
+
+      .products__description{
+         margin-top: 0;
+         margin-left: 0;
       }
    }
 }

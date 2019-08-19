@@ -25,6 +25,7 @@
     flex-direction: row;
     justify-content: space-between;
   
+  
 }
 
 .extras__item{
@@ -89,6 +90,7 @@
 }
 
 .extras__gift{
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +112,31 @@
     font-size: $p-size;
     line-height: 20px;
 }
+
+@media (max-width: 1150px){
+    .extras__wrapper{
+        flex-wrap: wrap;
+    }
+    
+    .extras__sale{
+        margin: 0 auto;
+    }
+
+
+    .extras__gift{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 950px){
+    .addition{
+        width: 100%;
+    }
+
+}
+
 
 
 @media (max-width: 790px){
@@ -181,5 +208,79 @@
         text-align: left;
         margin-left: auto;
         margin-right: 120px;
+        width: 200px;
     }
+}
+
+@media (max-width: 530px){
+
+    .extras{
+        margin-top: 45px;
+        margin-bottom: 0px;
+    }
+
+    .extras__title{
+        top: -40px;
+        font-size: 24px;
+    }
+
+    .extras__wrapper{
+        margin-top: 40px;
+    }
+
+    .addition{
+        margin: 0 auto;
+        height: 130px;
+        padding: 0;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+
+    .addition__title{
+        margin-top: 15px;
+        font-size: 16px;
+        flex-basis: 100%;
+    }
+
+    .addition__description{
+        margin: 0;
+     
+        margin-top: -25px;
+        font-size: 14px;
+    }
+
+    .addition__price{
+        margin: 0;
+        margin-top: -25px;
+        margin-left: auto;
+        font-size: 14px;
+    }
+
+    .extras__gift{
+        margin-top: 38px;
+        margin-bottom: 35px;
+        width: 100%;
+        height: 289px;
+        background: url('../img/gift-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .extras__gift-img{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .extras__gift-description{
+        text-align: center;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+    
+
 }

@@ -1,0 +1,113 @@
+.extras{
+    margin-top: 97px;
+    margin-bottom: 87px;
+}
+
+.extras__line{
+    position: relative;
+    background-color: $green;
+    height: 3px;
+}
+
+.extras__title{
+    top: -61px;
+    margin-left: -40px;
+    padding: 0 35px 0 40px;
+    position: absolute;
+    font-family: 'oswald';
+    font-size: $h2-size;
+    background: white;
+}
+
+.extras_wrapper{
+    display: flex;
+    margin-top: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.extras__item{
+    width: 895px;
+}
+
+.addition{
+    border-bottom: 1px solid #cdcdcd;
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.addition:first-of-type{
+    border-top: 1px solid #cdcdcd;
+}
+
+.addition__title{
+    width: 170px;
+    font-family: 'oswald';
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.addition__description{
+    width: 135px;
+    margin-left: auto;
+    margin-right: 110px;
+    font-family: 'arial';
+    font-weight: normal;
+    font-size: $p-size;
+    color: $p-color;
+}
+
+.addition__price{
+    width: 45px;
+    margin-right: 35px;
+    font-family: 'arial';
+    font-weight: normal;
+    font-size: $p-size;
+    color: $p-color;
+}
+
+.addition__button{
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 40px;
+    background: $green;
+    font-family: 'oswald';
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.extras__gift{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 245px;
+    height: 289px;
+    background: url(../img/gift-desctop.jpg);
+}
+
+.extras__gift-img{
+    margin-top: 41px;
+}
+
+.extras__gift-description{
+    font-family: 'arial';
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    font-size: $p-size;
+    line-height: 20px;
+   
+}

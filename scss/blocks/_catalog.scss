@@ -97,16 +97,18 @@
 
 .product__buy{
   font-family: 'Oswald';
-  color: white;
+  color: rgba($color: white, $alpha: 0.5);
   padding: 8px 56px;
   text-transform: uppercase;
   background-color: $green;
+  transition: 0.3s linear;
   &--add{
    font-family: 'Oswald';
    color: black;
    padding: 8px 40px;
    text-transform: uppercase;
    background-color: #f2f2f2;
+   transition: 0.3s linear;
   }
 }
 

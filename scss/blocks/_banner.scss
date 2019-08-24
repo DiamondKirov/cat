@@ -1,10 +1,10 @@
 .container-bg{
     max-width: 1220px;
     padding: 0 40px;
-    top: -150px;
+    top: -223px;
+    right: -65px;
     margin: 0 auto;
     position: relative;
-    border: 1px solid black;
 }
 
 .background{
@@ -18,8 +18,9 @@
 
 .button{
     padding: 11px 27px;
-    color: white;
+    color: rgba($color: white, $alpha: 0.5);
     background: $green;
+    transition: 0.3s linear;
 }
 
 .banner__wrapper{
@@ -81,6 +82,11 @@
 
 
 @media (max-width: 650px){
+    .container-bg{
+        right: 0;
+        top: -219px;
+    }
+
     .background{
         top: 65px;
         display: block;

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/contact-style.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <title>Cat Energy Catalog</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <nav class="header__nav nav">
+                <div class="nav__item header__mobile">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/header__logo--mobile.png">
+                            <source media="(max-width: 790px)" srcset="img/header__logo--tablet.png">
+                            <img class="header__logo logo" src="img/header__logo.png" alt="">
+                        </picture>
+                    </a>
+                    <div class="nav__item logo-title">
+                        <img  src="img/header__logo-title--mobile.png" alt="">
+                    </div>
+                    <a href="#" class="nav__item-burger burger">
+                        <span class="burger__item"></span>
+                    </a>
+                </div>
+                <div class="header__navigation">
+                    <a href="index.html" class="nav__link">
+                        Главная
+                    </a>
+                     <a href="catalog.html" class="nav__link">
+                        Каталог продукции
+                    </a>
+                     <a href="contact.html" class="nav__link--active">
+                        Подбор программы
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <article class="form">
+            <div class="container">
+                <div class="form__title title">
+                    Подбор программы
+                </div>
+                <div class="form__description">
+                    Заполните анкету и мы подберем программу питания для вашего кота
+                </div>
+                <form id="form" action="">
+                    <div class="form__wrapper">
+                        <div class="form__group">
+                            <div class="form__input">
+                                <label class="form__label" for="name" >Имя:* </label>
+                                <input class="form__text"  name="name" id="name" type="text" placeholder="Имя кота">
+                            </div>
+                            <div class="form__input">
+                                <label class="form__label" for="weight">Вес (кг):* </label>
+                                <input class="form__text" name="weight" id="weight" type="text" placeholder="Вес кота">
+                            </div>
+                            <div class="form__input">
+                                <label class="form__label" for="age">Возраст (лет): </label>
+                                <input class="form__text" name="age" id="age" type="text" placeholder="Возраст кота">
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__input">
+                                <input class="form__radio" name="program" id="lose" type="radio">
+                                <label class="form__label" for="lose"> Похудение</label>
+                            </div>
+                            <div class="form__input">
+                                <input class="form__radio" name="program" id="take" type="radio">
+                                <label class="form__label" for="take"> Набор массы</label>
+                            </div>
+                            <div class="form__input">
+                                <input class="form__radio" name="program" id="dont" type="radio">
+                                <label class="form__label" for="dont"> Не знаю (нужен ваш совет)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__subtitle">
+                        Контактные данные (владельца кота)
+                    </div>
+                    <div class="form__wrapper">
+                        <div class="form__group">
+                            <div class="form__input">
+                                <label class="form__label" for="email">E-mail:* </label>
+                                <input class="form__text" type="text" name="email" id="email" placeholder="Email@mail.ru">
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__input">
+                                <label class="form__label" for="phone">Телефон:* </label>
+                                <input class="form__text" type="text" name="email" id="phone" placeholder="8 (888) 888 88 88">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__subtitle">
+                        Комментарий
+                    </div>
+                    <textarea class="form__textarea" name="comment" id="textarea" cols="30" rows="10" placeholder="Оставте ваш комментарий"></textarea>
+                    <div class="form__subtitle">
+                        Дополнительно
+                    </div>
+                    <div class="form__wrapper">
+                        <div class="form__input">
+                            <input type="checkbox" name="nosugar" id="nosugar" class="form__check">
+                            <label class="form__label" for="nosugar">сахорозаменитель</label>
+                        </div>
+                        <div class="form__input">
+                            <input type="checkbox" name="water" id="water" class="form__check">
+                            <label class="form__label" for="water">питьевая вода</label>
+                        </div>
+                        <div class="form__input">
+                            <input type="checkbox" name="milk" id="milk" class="form__check">
+                            <label class="form__label" for="milk">Молоко</label>
+                        </div>
+                        <div class="form__input">
+                            <input type="checkbox" name="vitamins" id="vitamins" class="form__check">
+                            <label class="form__label" for="vitamins">витамины</label>
+                        </div>
+                    </div>
+                    <div class="form__input-sub">
+                        <input type="submit" class="form__submit button" value="Отправить заявку">
+                        <div class="form__requare">* - Обязательное поле</div>
+                    </div>
+                </form>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="map">
+            <div class="container">
+                <div class="map__contacts contacts">
+                    <h1 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h1>
+                    <p class="contacts__description">ул. Большая Конюшенная, д. 19/8
+                    <br><br>Санкт-Петербург</p>
+                </div>
+                
+            </div>
+            <img class="map__pin" src="img/map_pin.png" alt="">
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__logo">
+                        <img src="img/footer__logo.png" alt="">
+                    </div>
+                    <div class="footer__social social">
+                        <img class="social__item" src="img/vk.png" alt="">
+                        <img class="social__item" src="img/instagram.png" alt="">
+                        <img class="social__item" src="img/facebook.png" alt="">
+                    </div>
+                    <a href="https://htmlacademy.ru/" target="_blank" class="footer__html"><img src="img/html.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

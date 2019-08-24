@@ -7,3 +7,27 @@
 @import 'blocks/_example' ;
 @import 'blocks/_footer' ;
 
+
+.nav__link{
+    color:black;
+}
+
+.nav__link--active{
+    color:black;
+    border-color: black;
+}
+
+.map__contacts{
+    background: white;
+}
+
+@media (max-width: 650px){
+    .nav__link{
+        &:last-of-type{
+            border-top: 1px solid black;
+        }
+        &--active{
+            border: none;
+        }
+    }
+}

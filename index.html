@@ -7,42 +7,46 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normolize.css">
     <link rel="stylesheet" href="css/index-style.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/slider-cat.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <title>Cat Energy</title>
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="container">
             <nav class="header__nav nav">
-                <div class="nav__item header__logo logo">
-                    <picture>
-                        <source media="(max-width: 650px)" srcset="img/header__logo--mobile.png">
-                        <source media="(max-width: 790px)" srcset="img/header__logo--tablet.png">
-                        <img src="img/header__logo.png" alt="">
-                    </picture>
+                <div class="nav__item header__mobile">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/header__logo--mobile.png">
+                            <source media="(max-width: 790px)" srcset="img/header__logo--tablet.png">
+                            <img class="header__logo logo" src="img/header__logo.png" alt="">
+                        </picture>
+                    </a>
+                    <div class="nav__item logo-title">
+                        <img  src="img/header__logo-title--mobile.png" alt="">
+                    </div>
+                    <a href="#" class="nav__item-burger burger">
+                        <span class="burger__item"></span>
+                    </a>
                 </div>
-                <div class="nav__item logo-title">
-                    <img  src="img/header__logo-title--mobile.png" alt="">
-                </div>
-                <div class="nav__item header__navigation">
-                    <a href="#" class="nav__link--active">
+                <div class="header__navigation">
+                    <a href="index.html" class="nav__link--active">
                         Главная
                     </a>
-                     <a href="#" class="nav__link">
+                     <a href="catalog.html" class="nav__link">
                         Каталог продукции
                     </a>
-                     <a href="#" class="nav__link">
+                     <a href="contact.html" class="nav__link">
                         Подбор программы
                     </a>
                 </div>
-                <a href="#" class="nav__item-burger burger">
-                    <span class="burger__item"></span>
-                    <span class="burger__item"></span>
-                    <span class="burger__item"></span>
-                </a>
             </nav>
         </div>
     </header>
+
 
     <main id="content">
         <div class="container-bg">
@@ -69,7 +73,7 @@
                             <img class="banner__img" src="img/index-can.png" alt="">
                         </picture>
                         <div class="banner__button">
-                            <a class="button" href="#">подобрать программу</a> 
+                            <a class="button" href="contact.html">подобрать программу</a> 
                         </div>
                             
                         </a>
@@ -205,27 +209,21 @@
                         <div class="slider__img">
                             <picture>
                                 <source media="(max-width: 650px)" srcset="img/before-mobile.png">
-                                <img class="slide__item before" src="img/before-desctop.png" alt="">
+                                <img class="slide__item img__before" src="img/before-desctop.png" alt="">
                             </picture>
                             <picture>
                                 <source media="(max-width: 650px)" srcset="img/after-mobile.png">
-                                <img class="slide__item after" src="img/after-desctop.png" alt="">
+                                <img class="slide__item img__after" src="img/after-desctop.png" alt="">
                             </picture>
-                            
                         </div>
                         <div class="slider__control">
                             <h2 class="range__name" for="">Было</h2>
-                            <div class="slider__range">
-                                <div class="slider__thumb"></div>
-                                
-                            </div>
+                            <input type="range" min="1" max="100" value="50" class="slider__range" id="myRange">
                             <div class="slider__switch">
-                                <input type="radio" id="before" name="switch"><label class="slider__before" for="before"></label>
-                                <input type="radio" id="after" name="switch"><label class="slider__after" for="after"></label>
+                                <input class="switch__left" type="radio" id="left" name="mobile-cat" checked><label class="slider__before" for="left" ></label>
+                                <input class="switch__right" type="radio" id="right" name="mobile-cat"><label class="slider__after" for="right"></label>
                             </div>
                             <h2 class="range__name" for="">Стало</h2>
-                        </div>
-                        <div class="slider__background"> 
                         </div>
                     </div>
                 </div>
@@ -256,10 +254,11 @@
                         <img class="social__item" src="img/instagram.png" alt="">
                         <img class="social__item" src="img/facebook.png" alt="">
                     </div>
-                    <a href="" class="footer__html"><img src="img/html.png" alt=""></a>
+                    <a href="https://htmlacademy.ru/" target="_blank" class="footer__html"><img src="img/html.png" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="js/slider-cat.js"></script>
 </body>
 </html>

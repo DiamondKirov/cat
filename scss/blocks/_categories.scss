@@ -21,9 +21,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background: $cat-background;  
-    &:first-of-type{
-        margin-bottom: 20px;
-    }  
+   
 }
 
 .categories__title{
@@ -82,6 +80,7 @@
     font-size: 20px;
     text-transform: uppercase;
     color: black;
+    transition: 0.5s linear;
     &:after{
         content: '';
         position: absolute;
@@ -93,7 +92,21 @@
         background: url(../img/arrow-right.png);
         background-repeat: no-repeat;
     }
+    &:active{
+        opacity: 0.5;
+    }
 }
+
+@media (max-width: 1236px){
+    .categories__item{
+        margin: 0 auto;
+        &:first-of-type{
+            margin-bottom: 20px;
+        }  
+    }   
+}
+
+
 
 @media (max-width: 790px){
     .categories{
@@ -180,7 +193,7 @@
     .categories__item:last-child{
         .categories__icon{
             left: -10px;
-            top: 4px;
+            top: 10px;
         }
     }
 

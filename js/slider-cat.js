@@ -1,33 +1,51 @@
 $(document).ready(function () {
-    console.log($('.slider__range').val());
     $('.slider__range').on("change mousemove", function(){
         $val1 = $('.slider__range').val()/100;
         $val2 = 1-$('.slider__range').val()/100;
-        $('.before').css({
+        $('.img__before').css({
             opacity: $val1
         })
-        $('.after').css({
+        $('.img__after').css({
             opacity: $val2
         })
     })
+    $(window).resize( function(){
+        if ($(window).width()<=650){
+            $('.img__before').css({
+                opacity: 1
+            })
+            $('.img__after').css({
+                opacity: 1
+            })
+        } else {
+            $('.img__before').css({
+                display: 'block'
+            })
+            $('.img__after').css({
+                display: 'block'
+            })
+        }
+    })
 
-  $('.switch__left').on('click', function(){
-    $('.img__before').css({
-        display: 'block'
+   
+
+    $('.switch__left').on('click', function(){
+        $('.img__before').css({
+            display: 'block'
+        })
+        $('.img__after').css({
+            display: 'none'
+        })
     })
-    $('.img__after').css({
-        display: 'none'
+
+    $('.switch__right').on('click', function(){
+        $('.img__before').css({
+            display: 'none'
+        })
+        $('.img__after').css({
+            display: 'block'
+        })
     })
-  })
-  
-  $('.switch__right').on('click', function(){
-    $('.img__before').css({
-        display: 'none'
-    })
-    $('.img__after').css({
-        display: 'block'
-    })
-  })
-  
+
     
 });

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/contact-style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/mail.js"></script>
     <title>Cat Energy Catalog</title>
 </head>
 <body>
@@ -59,11 +60,11 @@
                         <div class="form__group">
                             <div class="form__input">
                                 <label class="form__label" for="name" >Имя:* </label>
-                                <input class="form__text"  name="name" id="name" type="text" placeholder="Имя кота">
+                                <input class="form__text"  name="name" id="name" type="text" placeholder="Имя кота" required>
                             </div>
                             <div class="form__input">
                                 <label class="form__label" for="weight">Вес (кг):* </label>
-                                <input class="form__text" name="weight" id="weight" type="text" placeholder="Вес кота">
+                                <input class="form__text" name="weight" id="weight" type="text" placeholder="Вес кота" required>
                             </div>
                             <div class="form__input">
                                 <label class="form__label" for="age">Возраст (лет): </label>
@@ -72,16 +73,16 @@
                         </div>
                         <div class="form__group">
                             <div class="form__input">
-                                <input class="form__radio" name="program" id="lose" type="radio">
+                                <input class="form__radio" name="program" id="lose" type="radio" value="Похудение">
                                 <label class="form__label" for="lose"> Похудение</label>
                             </div>
                             <div class="form__input">
-                                <input class="form__radio" name="program" id="take" type="radio">
-                                <label class="form__label" for="take"> Набор массы</label>
+                                <input class="form__radio" name="program" id="take" type="radio" value="Набор массы">
+                                <label class="form__label" for="take" > Набор массы</label>
                             </div>
                             <div class="form__input">
                                 <input class="form__radio" name="program" id="dont" type="radio">
-                                <label class="form__label" for="dont"> Не знаю (нужен ваш совет)</label>
+                                <label class="form__label" for="dont" value="Не знаю"> Не знаю (нужен ваш совет)</label>
                             </div>
                         </div>
                     </div>
@@ -91,14 +92,14 @@
                     <div class="form__wrapper">
                         <div class="form__group">
                             <div class="form__input">
-                                <label class="form__label" for="email">E-mail:* </label>
+                                <label class="form__label" for="email" required>E-mail:* </label>
                                 <input class="form__text" type="text" name="email" id="email" placeholder="Email@mail.ru">
                             </div>
                         </div>
                         <div class="form__group">
                             <div class="form__input">
-                                <label class="form__label" for="phone">Телефон:* </label>
-                                <input class="form__text" type="text" name="email" id="phone" placeholder="8 (888) 888 88 88">
+                                <label class="form__label" for="phone" required>Телефон:* </label>
+                                <input class="form__text" type="text" name="phone" id="phone" placeholder="8 (888) 888 88 88">
                             </div>
                         </div>
                     </div>
@@ -111,22 +112,23 @@
                     </div>
                     <div class="form__wrapper">
                         <div class="form__input">
-                            <input type="checkbox" name="nosugar" id="nosugar" class="form__check">
-                            <label class="form__label" for="nosugar">сахорозаменитель</label>
+                            <input type="checkbox" name="add" id="nosugar" class="form__check">
+                            <label class="form__label" for="nosugar" value="сахорозаменитель">сахорозаменитель</label>
                         </div>
                         <div class="form__input">
-                            <input type="checkbox" name="water" id="water" class="form__check">
-                            <label class="form__label" for="water">питьевая вода</label>
+                            <input type="checkbox" name="add" id="water" class="form__check">
+                            <label class="form__label" for="water" value="питьевая вода">питьевая вода</label>
                         </div>
                         <div class="form__input">
-                            <input type="checkbox" name="milk" id="milk" class="form__check">
-                            <label class="form__label" for="milk">Молоко</label>
+                            <input type="checkbox" name="add" id="milk" class="form__check">
+                            <label class="form__label" for="milk" value="Молоко">Молоко</label>
                         </div>
                         <div class="form__input">
-                            <input type="checkbox" name="vitamins" id="vitamins" class="form__check">
-                            <label class="form__label" for="vitamins">витамины</label>
+                            <input type="checkbox" name="add" id="vitamins" class="form__check">
+                            <label class="form__label" for="vitamins" value="витамины">витамины</label>
                         </div>
                     </div>
+                    
                     <div class="form__input-sub">
                         <input type="submit" class="form__submit button" value="Отправить заявку">
                         <div class="form__requare">* - Обязательное поле</div>
@@ -134,7 +136,7 @@
                 </form>
             </div>
         </article>
-
+        <button class="give">123</button>
     </main>
 
     <footer>

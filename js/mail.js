@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
    $("#form").bind("submit", function(e){
+      
+      e.preventDefault();
         $.ajax({
            type: "POST",
            url: "./ajax/mail.php",

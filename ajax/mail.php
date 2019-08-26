@@ -13,6 +13,6 @@ $mail = "diamondkirov@gmail.com";
 
 $message = "Имя - $name, Вес - $weight, Возраст - $age \n Программа - $program \n\n Связь: $email   $phone \n Коментарий от пользователя \n $comment \n\n Добавки: $add";
 
-mail($mail, 'Сайт для резюме', $message);
+mail($mail, 'Сайт для резюме', $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $mail");
 
 ?>

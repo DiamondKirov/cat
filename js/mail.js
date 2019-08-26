@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-   $("#form").bind("submit", function(){
-      $.ajax({
+   $("#form").bind("submit", function(e){
+        $.ajax({
            type: "POST",
-           url: "../ajax/mail.php",
+           url: "./ajax/mail.php",
+           dateType: "text",
            data: $(this).serialize(),
-           dataType: "dataType",
            success: function () {
                alert('Данные отправлены')
            },

@@ -23,6 +23,10 @@
   body {
     margin: 0;
   }
+
+*{
+   outlIne: none
+}
   
   /**
    * Render the `main` element consistently in IE.

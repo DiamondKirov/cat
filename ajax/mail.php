@@ -7,12 +7,28 @@ $program = trim($_POST["program"]);
 $email = trim($_POST["email"]);
 $phone = trim($_POST["phone"]);
 $comment = trim($_POST["comment"]);
-$add = trim($_POST["add"]);
+$add = " ";
+
+    if (trim($_POST["vitamins"]) == true ){
+        $add = $add + " Витамины";
+    }
+    if (trim($_POST["Water"]) == true ){
+        $add = $add + " Питьевая вода";
+    }
+
+    if (trim($_POST["milk"]) == true ){
+        $add = $add + " Молоко";
+    }
+
+    if (trim($_POST["nosugar"]) == true ){
+        $add = $add + " Витамины";
+    }
+
 
 $mail = "diamondkirov@gmail.com";
 
 $message = "Имя - $name, Вес - $weight, Возраст - $age \n Программа - $program \n\n Связь: $email   $phone \n Коментарий от пользователя \n $comment \n\n Добавки: $add";
 
-mail($mail, 'Сайт для резюме', $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $mail");
+mail($mail, 'Сайт для резюме', $message);
 
 ?>

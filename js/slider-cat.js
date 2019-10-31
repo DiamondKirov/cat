@@ -9,6 +9,7 @@ $(document).ready(function () {
             opacity: $val2
         })
     })
+    
     $(window).resize( function(){
         if ($(window).width()<=650){
             $('.img__before').css({

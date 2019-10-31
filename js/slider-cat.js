@@ -29,7 +29,7 @@ $(document).ready(function () {
     
     $(document).bind('scroll', function(){
    
-        if ($(document).scrollTop() > 200){
+        if ($(document).scrollTop() > 400){
                      console.log($(document).scrollTop())
             $('.categories__item').css({
               transfrom: 'scale(1)'  

@@ -15,10 +15,17 @@ $(document).ready(function () {
             $('.header__navigation').css({
                 opacity: '1'
             })
-        }
-       
-       
+        }       
     })
+    
+        $(document).bind('scroll', function(){
+        if ($(document).scrollTop > 200){
+
+            $('.categories__item').css({
+              transfrom: 'scale(1)'  
+            })
+        }
+    }
 
    
 });

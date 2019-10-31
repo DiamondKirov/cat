@@ -45,6 +45,7 @@ $(document).ready(function () {
             display: 'none'
         })
     })
+    
 
     $('.switch__right').on('click', function(){
         $('.img__before').css({

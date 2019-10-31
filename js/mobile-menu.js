@@ -17,15 +17,5 @@ $(document).ready(function () {
             })
         }       
     })
-    
-        $(document).bind('scroll', function(){
-        if ($(document).scrollTop > 200){
-
-            $('.categories__item').css({
-              transfrom: 'scale(1)'  
-            })
-        }
-    }
-
-   
+  
 });

@@ -31,9 +31,9 @@ $(document).ready(function () {
    
         if ($(document).scrollTop() > 400){
                      console.log($(document).scrollTop())
-            $('.categories__item').css({
+            $('.categories__item').css(
               transfrom: 'scale(1)'  
-            })
+            )
         }
     })
 

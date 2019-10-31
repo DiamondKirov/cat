@@ -33,8 +33,8 @@ $(document).ready(function () {
             $('.categories__item').css({
               transfrom: 'scale(1)'  
             })
-        }
-    }
+        })
+    })
 
    
 

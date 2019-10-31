@@ -28,6 +28,7 @@ $(document).ready(function () {
     })
     
     $(document).bind('scroll', function(){
+        console.log($(document).scrollTop)
         if ($(document).scrollTop > 200){
 
             $('.categories__item').css({

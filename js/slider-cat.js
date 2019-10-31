@@ -28,9 +28,9 @@ $(document).ready(function () {
     })
     
     $(document).bind('scroll', function(){
-        console.log($(document).scrollTop())
+   
         if ($(document).scrollTop() > 200){
-
+                     console.log($(document).scrollTop())
             $('.categories__item').css({
               transfrom: 'scale(1)'  
             })

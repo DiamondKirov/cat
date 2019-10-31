@@ -36,8 +36,6 @@ $(document).ready(function () {
         }
     })
 
-   
-
     $('.switch__left').on('click', function(){
         $('.img__before').css({
             display: 'block'
